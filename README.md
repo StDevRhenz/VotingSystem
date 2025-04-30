@@ -40,6 +40,7 @@ The project is organized into two main directories: `frontend` and `backend`.
 Contributions are welcome! Please submit a pull request or open an issue for any enhancements or bug fixes.
 
 ## License
+
 This project is licensed under the MIT License.
 
 
@@ -51,3 +52,11 @@ This project is licensed under the MIT License.
 
 
 
+
+
+
+## FEATURE ??
+
+
+## INTEGRATING AI SOON AHIHI 
+# PYTHON
