@@ -1,8 +1,13 @@
+import React from 'react';
 import { createRoot } from 'react-dom/client';
+import HomePage from './pages/HomePage/HomePage'; // Import the HomePage component
 
-// Clear the existing HTML content
-document.body.innerHTML = '<div id="app"></div>';
+// Get the root element from the HTML file
+const container = document.getElementById('root');
+if (!container) {
+  throw new Error("Root container 'root' not found");
+}
 
-// Render your React component instead
-const root = createRoot(document.getElementById('app'));
-root.render(<h1>Hello, world</h1>);
+// Render the HomePage component
+const root = createRoot(container);
+root.render(<HomePage />);
