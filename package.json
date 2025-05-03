@@ -1,0 +1,17 @@
+{
+    "name": "voting-system",
+    "version": "1.0.0",
+    "description": "A voting system with frontend and backend",
+    "private": true,
+    "scripts": {
+      "start:frontend": "npm --prefix frontend start",
+      "start:backend": "npm --prefix backend start",
+      "start": "npm run start:frontend & npm run start:backend",
+      "build:backend": "npm --prefix backend run build",
+      "build": "npm run build:backend"
+    },
+    "workspaces": [
+      "frontend",
+      "backend"
+    ]
+  }
