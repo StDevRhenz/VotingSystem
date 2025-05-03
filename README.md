@@ -54,24 +54,21 @@ This project is licensed under the MIT License.
 - **AI Integration:** Plan to integrate AI for advanced analytics and predictions.
 - **Python Integration:** Explore Python for additional backend functionalities.
 
-
-
-
-
-
-
+# FOLDER STRUCTURE
 VotingSystem/
-├── frontend/
+├── frontend/                  # React Native application
 │   ├── assets/                # Static assets like images or fonts
 │   ├── components/            # Reusable React Native components
 │   │   ├── HomePage.tsx       # Home page for casting votes
 │   │   ├── ResultsPage.tsx    # Results page for viewing votes
 │   │   └── WebSocketProvider.tsx # WebSocket setup for real-time updates
+│   ├── navigation/            # Navigation setup for the app
+│   │   └── AppNavigator.tsx   # Handles app navigation
 │   ├── App.tsx                # Main entry point for the React Native app
 │   ├── package.json           # Frontend dependencies
 │   ├── tsconfig.json          # TypeScript configuration
 │   └── README.md              # Frontend-specific documentation
-├── backend/
+├── backend/                   # Node.js backend
 │   ├── controllers/           # Logic for handling requests
 │   │   └── voteController.js  # Controller for vote-related operations
 │   ├── models/                # Database models
