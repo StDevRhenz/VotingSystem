@@ -22,7 +22,7 @@ const Homepage: React.FC = () => {
   useEffect(() => {
     const fetchCandidates = async () => {
       try {
-        const response = await fetch('http://192.168.100.162:5000/api/candidates'); // Replace with your computer's IP // Replace localhost with your IP if testing on a mobile device
+        const response = await fetch('https://voting-system-qtoj0lotp-stdevrhenzs-projects.vercel.app'); // Replace with your computer's IP // Replace localhost with your IP if testing on a mobile device
         const data = await response.json();
         setCandidateData(data);
       } catch (error) {
