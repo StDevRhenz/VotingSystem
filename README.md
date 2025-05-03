@@ -64,6 +64,8 @@ VotingSystem/
 │   │   └── WebSocketProvider.tsx # WebSocket setup for real-time updates
 │   ├── navigation/            # Navigation setup for the app
 │   │   └── AppNavigator.tsx   # Handles app navigation
+│   ├── screen/                # Application for screens and pages
+│   │   └── AppNavigator.tsx   # Handles app navigation
 │   ├── App.tsx                # Main entry point for the React Native app
 │   ├── package.json           # Frontend dependencies
 │   ├── tsconfig.json          # TypeScript configuration
@@ -82,3 +84,13 @@ VotingSystem/
 │   └── README.md              # Backend-specific documentation
 ├── README.md                  # Main project documentation
 └── .gitignore                 # Git ignore file
+
+
+
+
+# running applciation Structure
+
+-backend
+npm run dev
+
+-npx expo start (for Mobile Application)
