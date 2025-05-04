@@ -16,3 +16,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+//hahahahahahhahahha perfect na kaya pag merge
