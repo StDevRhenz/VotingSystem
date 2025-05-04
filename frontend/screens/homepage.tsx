@@ -20,7 +20,7 @@ const Homepage: React.FC = () => {
 
   // Fetch candidate data from the backend
   useEffect(() => {
-    const fetchCandidates = async () => {
+    const fetchCandidates = async () => {//Imback
       try {
         const response = await fetch('http://192.168.100.162:5000/api/candidates'); // Replace with your computer's IP // Replace localhost with your IP if testing on a mobile device
         const data = await response.json();
