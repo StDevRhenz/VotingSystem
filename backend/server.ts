@@ -1,7 +1,6 @@
 import app from './app';
+import { VercelRequest, VercelResponse } from '@vercel/node';
 
-const PORT = 5000;
-
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+export default function handler(req: VercelRequest, res: VercelResponse) {
+  app(req, res);
+}
