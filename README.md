@@ -94,3 +94,6 @@ VotingSystem/
 npm run dev
 
 -npx expo start (for Mobile Application)
+
+
+-npm install when frontend has error
