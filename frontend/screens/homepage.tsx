@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Text,
@@ -8,33 +8,15 @@ import {
   Modal,
   TouchableOpacity,
 } from 'react-native';
-import CandidateItem from '../screens/CandidateItem';
-import { Candidate, CoalitionGroup } from '../screens/types';
+import CandidateItem from './CandidateItem';
+import { Candidate, CoalitionGroup } from '../types';
+import { candidateData } from '../data/candidateData'; // Import the data
 import styles from './homepage.styles';
 
 const Homepage: React.FC = () => {
-  const [candidateData, setCandidateData] = useState<CoalitionGroup[]>([]);
   const [selectedCandidates, setSelectedCandidates] = useState<Candidate[]>([]);
   const [modalVisible, setModalVisible] = useState<boolean>(false);
   const MAX_SELECTION = 12;
-
-  // Fetch candidate data from the backend
-  useEffect(() => {
-    const fetchCandidates = async () => {//Imback
-      try {
-        //const response = await fetch('http://localhost:3000');
-        const response = await fetch('http://localhost:3000/api/candidates');
-        //const response = await fetch('http://192.168.100.162:5000/api/candidates'); // Replace with your computer's IP // Replace localhost with your IP if testing on a mobile device
-        const data = await response.json();
-        setCandidateData(data);
-      } catch (error) {
-        console.error('Error fetching candidate data:', error);
-        Alert.alert('Error', 'Failed to load candidate data.');
-      }
-    };
-  
-    fetchCandidates();
-  }, []);
 
   const toggleCandidate = (candidate: Candidate): void => {
     const isSelected = selectedCandidates.some((c) => c.id === candidate.id);
