@@ -23,16 +23,9 @@ The project is organized into two main directories: `frontend` and `backend`.
    ```
 4. Use the Expo Go app on your mobile device to scan the QR code and run the application.
 
+//*** backend is never be used anymore, this is for standalone project
 ### Backend
-1. Navigate to the `backend` directory.
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the server:
-   ```bash
-   npm start
-   ```
+
 
 ## Usage
 - Access the application on your mobile device using Expo Go.
@@ -46,9 +39,7 @@ Contributions are welcome! Please submit a pull request or open an issue for any
 This project is licensed under the MIT License.
 
 ## Features
-- **Real-time Voting:** Users can cast votes and see live updates of results.
-- **Mobile-Friendly:** Built with React Native and Expo Go for seamless mobile experience.
-- **Scalable Backend:** Node.js and Express provide a robust backend for managing votes and results.
+- **Mobile-Friendly:** Built with React Native and Expo Go for seamless mobile experience.results.
 
 ## Future Enhancements
 - **AI Integration:** Plan to integrate AI for advanced analytics and predictions.
@@ -70,18 +61,6 @@ VotingSystem/
 │   ├── package.json           # Frontend dependencies
 │   ├── tsconfig.json          # TypeScript configuration
 │   └── README.md              # Frontend-specific documentation
-├── backend/                   # Node.js backend
-│   ├── controllers/           # Logic for handling requests
-│   │   └── voteController.js  # Controller for vote-related operations
-│   ├── models/                # Database models
-│   │   └── voteModel.js       # Model for storing votes
-│   ├── routes/                # API routes
-│   │   └── voteRoutes.js      # Routes for vote-related endpoints
-│   ├── app.js                 # Express app setup
-│   ├── server.js              # Server entry point
-│   ├── package.json           # Backend dependencies
-│   ├── tsconfig.json          # TypeScript configuration (if using TypeScript)
-│   └── README.md              # Backend-specific documentation
 ├── README.md                  # Main project documentation
 └── .gitignore                 # Git ignore file
 
